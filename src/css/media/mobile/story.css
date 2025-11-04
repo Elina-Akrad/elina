@@ -1,0 +1,56 @@
+.story {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  .story-center {
+    width: 85%;
+    height: 100%;
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .swiper-slide-item{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        box-sizing: border-box;
+        img{
+            width: 74px;
+            height: 74px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            outline: 3px solid purple;
+            outline-offset: 3px;
+            margin-bottom: 5px;
+        }
+        p{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            overflow: hidden;
+            font-size: 11px;
+            width: 80%;
+            margin: 0 auto;
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

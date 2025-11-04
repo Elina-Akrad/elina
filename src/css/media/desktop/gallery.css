@@ -1,0 +1,25 @@
+.gallery {
+  width: 100%;
+  height: 250px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  .gallery-center {
+    width: 90%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    
+    box-sizing: border-box;
+    img {
+      width: 250px;
+      
+      border-radius: 16px;
+    }
+  }
+}
