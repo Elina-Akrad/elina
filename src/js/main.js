@@ -77,3 +77,130 @@ var swiper = new Swiper(".myWonderfull", {
     prevEl: ".swiper-button-prev",
   },
 });
+//init supermarket wonderfull
+new Swiper(".supermarketSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 3,
+  navigation: {
+    nextEl: ".supermarketSwiper .swiper-button-next",
+    prevEl: ".supermarketSwiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".supermarketSwiper .swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 4,
+    },
+    700: {
+      slidesPerView: 4,
+    },
+    800: {
+      slidesPerView: 5,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+    950: {
+      slidesPerView: 4,
+    },
+    1100: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 7,
+    },
+  },
+  rtl: true,
+  loop: false,
+});
+//init buy
+
+var swiper = new Swiper(".myBuy", {
+  slidesPerView: 7.5,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 2.5,
+    },
+    600: {
+      slidesPerView: 3.5,
+    },
+    800: {
+      slidesPerView: 4.5,
+    },
+    1000: {
+      slidesPerView: 6.5,
+    },
+
+    1235: {
+      slidesPerView: 7.5,
+    },
+  },
+});
+//init fav
+var swiper = new Swiper(".myFav", {
+  slidesPerView: 9.5,
+  spaceBetween: 2,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 3.5,
+    },
+    600: {
+      slidesPerView: 4.5,
+    },
+    800: {
+      slidesPerView: 5.5,
+    },
+    900: {
+      slidesPerView: 6.5,
+    },
+    1000: {
+      slidesPerView: 8.5,
+    },
+
+    1235: {
+      slidesPerView: 9.5,
+    },
+  },
+});
+//init bestseller
+var swiper = new Swiper(".myBestseller", {
+  slidesPerView: 4,
+  spaceBetween: 2,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+    breakpoints: {
+    400: {
+      slidesPerView: 2,
+    },
+    600: {
+      slidesPerView: 2.5,
+    },
+    700: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 3.5,
+    },
+
+
+    1235: {
+      slidesPerView: 4,
+    },
+  },
+});

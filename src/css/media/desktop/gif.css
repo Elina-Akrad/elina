@@ -1,0 +1,17 @@
+.gif{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    .gif-center{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        column-gap: 10px;
+        img{
+            width: 50%;
+            border-radius: 16px;
+        }
+    }
+}
