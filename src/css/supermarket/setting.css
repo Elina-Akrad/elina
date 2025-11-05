@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Yekan;
+  src: url(../fonts/farsi/BYekan+.ttf);
+}
+@font-face {
+  font-family: Nazanin;
+  src: url(../fonts/farsi/B-NAZANIN\ copy.TTF);
+}
+html,
+body {
+  font-family: Yekan;
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: 100%;
+}
+.swiper-button-prev & .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  svg {
+    width: 40px;
+    height: 20px;
+    font-weight: bold;
+    color: palevioletred;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+  .swiper-button-disabled {
+    opacity: 0 !important;
+  }
+}
