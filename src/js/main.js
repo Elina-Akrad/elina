@@ -184,7 +184,7 @@ var swiper = new Swiper(".myBestseller", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-    breakpoints: {
+  breakpoints: {
     400: {
       slidesPerView: 2,
     },
@@ -198,9 +198,106 @@ var swiper = new Swiper(".myBestseller", {
       slidesPerView: 3.5,
     },
 
-
     1235: {
       slidesPerView: 4,
     },
   },
 });
+
+//supermarket js
+
+//init wonderfull
+
+//clock
+function formatTimeUnit(u) {
+  return u < 10 ? "0" + u : u;
+}
+
+function getTimeString() {
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes();
+  var s = date.getSeconds();
+  var session = "AM";
+
+  if (h == 0) h = 12;
+  if (h > 12) {
+    h = h - 12;
+    session = "PM";
+  }
+
+  h = formatTimeUnit(h);
+  m = formatTimeUnit(m);
+  s = formatTimeUnit(s);
+
+  return h + ":" + m + ":" + s + " " + session;
+}
+
+function updateClocks() {
+  var clocks = document.querySelectorAll(".clock");
+  var time = getTimeString();
+  clocks.forEach(function (el) {
+    el.textContent = time;
+  });
+}
+
+// start immediately and then every second
+updateClocks();
+setInterval(updateClocks, 1000);
+//init sale
+var swiper = new Swiper(".mysale", {
+  slidesPerView: 6.5,
+  spaceBetween: 3,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 3.2,
+    },
+    600: {
+      slidesPerView: 4.2,
+    },
+    800: {
+      slidesPerView: 5.2,
+    },
+    1000: {
+      slidesPerView: 7.2,
+    },
+
+    1235: {
+      slidesPerView: 8.2,
+    },
+  },
+});
+
+//init cleasn
+
+var swiper = new Swiper(".myClean", {
+  slidesPerView: 5.9,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 2.5,
+    },
+    600: {
+      slidesPerView: 2.9,
+    },
+    700: {
+      slidesPerView: 3.7,
+    },
+    900: {
+      slidesPerView: 4.2,
+    },
+
+    1235: {
+      slidesPerView: 5.5,
+    },
+  },
+});
+

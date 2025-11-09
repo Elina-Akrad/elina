@@ -5,11 +5,11 @@
 }
 @font-face {
   font-family: Yekan;
-  src: url(../fonts/farsi/BYekan+.ttf);
+  src: url(../../font/farsi/IRENYekan.ttf);
 }
 @font-face {
   font-family: Nazanin;
-  src: url(../fonts/farsi/B-NAZANIN\ copy.TTF);
+  src: url(../../font/farsi/B-NAZANIN.TTF);
 }
 html,
 body {
@@ -20,25 +20,25 @@ body {
 .wrapper {
   width: 100%;
 }
-.swiper-button-prev & .swiper-button-prev,
-.swiper-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
-.swiper-button-prev,
-.swiper-button-next {
-  svg {
-    width: 40px;
-    height: 20px;
-    font-weight: bold;
-    color: palevioletred;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-  }
-  .swiper-button-disabled {
-    opacity: 0 !important;
-  }
+
+/* target SVG arrows */
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 20px !important;
+  height: 20px !important;
+  font-weight: bold;
+  color: palevioletred;
+}
+
+/* hide disabled button */
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0 !important;
 }

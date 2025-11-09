@@ -1,9 +1,5 @@
-@import "./header.css";
 @import "./setting.css";
-@import "./slider.css";
-@import "./wonderfull.css";
-@import "./sale.css";
-@import "./buy.css";
-@import "./myclean.css";
-@import "./bestseller.css";
-@import "./latest.css";
+@import "./media/mobile/mobile.css" screen and (min-width: 340px);
+@import "./media/desktop/desktop.css" screen and (min-width: 900px);
+@import "./login.css";
+@import "./"

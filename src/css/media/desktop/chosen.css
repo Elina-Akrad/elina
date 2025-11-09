@@ -28,13 +28,14 @@
     }
     .chosen-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5,minmax(100px , auto));
       gap: 16px;
       align-items: start;
 
       
       
       .chosen-item {
+        display: grid;
         .chosen-card {
           background: #fff;
           border-radius: 8px;
@@ -139,6 +140,22 @@
             text-align: left;
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .chosen {
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .chosen {
+    .chosen-center {
+      width: 90%;
+      .chosen-grid {
+        grid-template-columns: repeat(3, minmax(100px, auto));
       }
     }
   }

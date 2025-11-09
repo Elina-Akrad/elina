@@ -329,7 +329,7 @@
         }
       }
       .header-bottom-left {
-        width: 30%;
+        width: 500px;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -337,6 +337,7 @@
         padding-right: 170px;
         box-sizing: border-box;
         position: relative;
+        left: 40px;
         label[for="location"] {
           height: 35px;
           line-height: 25px;
