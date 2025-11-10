@@ -42,6 +42,8 @@
       flex-flow: row wrap;
       flex-direction: row;
       gap: 10px;
+      justify-content: center;
+      align-items: center;
       .readable-center-bottom-card {
         display: flex;
         flex-direction: column;
@@ -51,7 +53,7 @@
         border-radius: 16px;
         height: 200px;
         img {
-          width: 200px;
+          width: 210px;
           border-radius: 16px;
         }
         span {

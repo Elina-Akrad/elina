@@ -91,28 +91,28 @@ new Swiper(".supermarketSwiper", {
   },
   breakpoints: {
     400: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
     },
     600: {
       slidesPerView: 4,
     },
     700: {
-      slidesPerView: 4,
+      slidesPerView: 4.2,
     },
     800: {
-      slidesPerView: 5,
+      slidesPerView: 5.4,
     },
     900: {
       slidesPerView: 4,
     },
     950: {
-      slidesPerView: 4,
+      slidesPerView: 4.2,
     },
     1100: {
-      slidesPerView: 5,
+      slidesPerView: 5.3,
     },
     1200: {
-      slidesPerView: 7,
+      slidesPerView: 7.2,
     },
   },
   rtl: true,
@@ -301,3 +301,48 @@ var swiper = new Swiper(".myClean", {
   },
 });
 
+//init suggest
+var swiper = new Swiper(".mySuggest", {
+  slidesPerView: 6.3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 2.5,
+      grid: {
+        rows: 2,
+      },
+    },
+    600: {
+      slidesPerView: 2.9,
+      grid: {
+        rows: 2,
+      },
+    },
+    700: {
+      slidesPerView: 3.7,
+      grid: {
+        rows: 2,
+      },
+    },
+    900: {
+      slidesPerView: 4.2,
+      grid: {
+        rows: 2,
+      },
+    },
+
+    1235: {
+      slidesPerView: 5.5,
+      grid: {
+        rows: 2,
+      },
+    },
+  },
+});

@@ -1,0 +1,187 @@
+.wonderfull {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .wonderful-center {
+    width: 90%;
+    height: 100%;
+    background-color: #B20AEB;
+    padding: 10px 10px 10px 0;
+    box-sizing: border-box;
+    border-radius: 16px ;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .swiper-slide-item{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #B20AEB;
+        
+        .image1{
+            width: 88px;
+            height: 88px;
+            display: block;
+            margin: 5px auto;
+        }
+        .clock{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            column-gap: 5px;
+            margin-top: 15px;
+            line-height: 30px;
+            .hours, .seconds, .minutes{
+                width: 30px;
+                height: 30px;
+                background-color: #ffffff;
+                font-family: Nazanin;
+                border-radius: 5px;
+            }
+            span{
+                color: #ffffff;
+            }
+        }
+        .image2{
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 15px auto;
+        }
+        a{
+            text-decoration: none;
+            font-family: Yekan;
+            font-size: 12px;
+            color: #ffffff;
+            font-weight: bold;
+
+        }
+      }
+      .swiper-slide-product{
+        height: 260px;
+        width: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        
+        img{
+            width: 132px;
+            height: 132px;
+            display: block;
+            margin: 10px auto;
+
+        }
+        p{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            overflow: hidden;
+            font-size: 11px;
+            width: 70%;
+            margin: 0 auto;
+            font-family: Yekan;
+            margin-bottom: 10px;
+        }
+        .discount{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding: 0 10px;
+            align-items: center;
+            h3{
+                font-family: Nazanin;
+                font-size: 15px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                .toman{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            h4{
+                font-family: Nazanin;
+                font-size: 13px;
+                font-weight: bold;
+                padding: 5px 10px;
+                background-color: #d82e4d;
+                color:#ffffff;
+                border-radius: 15px;
+            }
+        }
+        .former-price{
+            color: #bfc2c5;
+            text-decoration: line-through;
+            font-family: Nazanin;
+            text-align: left;
+            padding-left: 25px;
+            box-sizing: border-box;
+            font-size: 14px;
+            font-weight: bold;
+        }
+      }
+      .more{
+        height: 260px;
+        width: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .circle{
+            width: 52px;
+            height: 52px;
+            border: 2px solid #17BFD3;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .flash{
+                display: block;
+                color: #17BFD3;
+                width: 32px;
+                height: 32px;
+            }
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: Yekan;
+            color: #0d0d12;
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

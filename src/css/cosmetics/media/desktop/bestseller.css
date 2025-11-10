@@ -1,0 +1,106 @@
+.bestseller {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  
+  .bestseller-center {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #520c3c;
+    border-radius: 16px;
+    padding: 16px 0;
+    flex-direction: column;
+    .bestseller-center-top {
+      width: 100%;
+      height: 44px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        h1 {
+          font-size: 21px;
+        }
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        font-size: 14px;
+        color: #19bfd3;
+        width: 77px;
+        font-weight: bold;
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .swiper-slide-item {
+        width: 100%;
+        height: 100%;
+        
+        .swiper-slide-item-product {
+          width: 100%;
+          height: 33%;
+          display: flex;
+          
+          align-items: center;
+          img {
+            width: 86px;
+            height: 86px;
+            margin-right: 10px;
+          }
+          span {
+              font-family: Nazanin;
+              font-size: 40px;
+              margin-left: 12px;
+              color: #19bfd3;
+              font-weight: bold;
+            }
+          .tozihat {
+            border-bottom: 1px solid #5e0c3f;
+            height: 86px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              font-size: 12px;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              box-orient: vertical;
+              -webkit-line-clamp: 1;
+              line-clamp: 1;
+              overflow: hidden;
+            }
+          }
+
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+

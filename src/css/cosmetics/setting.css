@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Yekan;
+  src: url(../../font/farsi/IRENYekan.ttf);
+}
+@font-face {
+  font-family: Nazanin;
+  src: url(../../font/farsi/B-NAZANIN.TTF);
+}
+html,
+body {
+  font-family: Yekan;
+  direction: rtl;
+  scroll-behavior: smooth;
+  background-color: 	#fbdaed;
+}
+.wrapper {
+  width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* target SVG arrows */
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 20px !important;
+  height: 20px !important;
+  font-weight: bold;
+  color: palevioletred;
+}
+
+/* hide disabled button */
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0 !important;
+}

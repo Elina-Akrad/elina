@@ -6,7 +6,7 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  
+
   .readable-center {
     width: 90%;
     height: 100%;
@@ -42,18 +42,18 @@
       flex-flow: row wrap;
       flex-direction: row;
       gap: 10px;
-      justify-content: center;
-      align-items: center;
+       justify-content: center;
+            align-items: center;
       .readable-center-bottom-card {
         display: flex;
         flex-direction: column;
         flex-flow: column wrap;
         gap: 10px;
-        border: 1px solid #e0e0e2;
+        border: 1px solid #5d0d54;
         border-radius: 16px;
-        height: 260px;
+        height: 200px;
         img {
-          width: 270px;
+          width: 210px;
           border-radius: 16px;
         }
         span {
@@ -64,4 +64,3 @@
     }
   }
 }
-

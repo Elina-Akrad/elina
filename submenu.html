@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/submenu/main.css" />
+     <link rel="stylesheet" href="./src/font-awesome/css/font-awesome.min.css" />
   </head>
   <body>
     <div class="submenu">
@@ -882,6 +883,43 @@
     <div class="back">
       <a href="./digikala.html"></a>
     </div>
+
+    <!-- #region bottom-->
+    <div class="bottom">
+      <div class="bottom-center">
+        <div class="bottom-center-item">
+          <a href="./digikala.html"
+            ><i class="fa fa-home" aria-hidden="true"></i>
+            <nav>خانه</nav></a
+          >
+        </div>
+        <div class="bottom-center-itemm">
+          <a href="./submenu.html"
+            ><i class="fa fa-bars" aria-hidden="true"></i>
+            <nav>دسته بندی</nav>
+          </a>
+        </div>
+        <div class="bottom-center-item">
+          <a href="#">
+            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+            <nav>سبد خرید</nav></a
+          >
+        </div>
+        <div class="bottom-center-item">
+          <a href="#">
+            <i class="fa fa-play" aria-hidden="true"></i>
+            <nav>مکنت</nav></a
+          >
+        </div>
+        <div class="bottom-center-item">
+          <a href="#">
+            <i class="fa fa-github-alt" aria-hidden="true"></i>
+            <nav>دیجی کالای من</nav></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- #endregion bottom-->
     <script>
       (function () {
         const THRESHOLD = 900;
@@ -904,7 +942,7 @@
         document.addEventListener("DOMContentLoaded", checkAndRedirect);
       })();
     </script>
-        <script>
+    <script>
       (function () {
         const THRESHOLD = 900;
         let timer = null;
@@ -914,6 +952,28 @@
             const current = location.pathname.split("/").pop();
             if (current !== "supermarket.html") {
               location.href = "supermarket.html";
+            }
+          }
+        }
+
+        window.addEventListener("resize", () => {
+          clearTimeout(timer);
+          timer = setTimeout(checkAndRedirect, 150);
+        });
+
+        document.addEventListener("DOMContentLoaded", checkAndRedirect);
+      })();
+    </script>
+    <script>
+      (function () {
+        const THRESHOLD = 900;
+        let timer = null;
+
+        function checkAndRedirect() {
+          if (window.innerWidth >= THRESHOLD) {
+            const current = location.pathname.split("/").pop();
+            if (current !== "cosmetics.html") {
+              location.href = "cosmetics.html";
             }
           }
         }
