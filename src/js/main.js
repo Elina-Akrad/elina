@@ -346,3 +346,12 @@ var swiper = new Swiper(".mySuggest", {
     },
   },
 });
+//footer
+const moreBtn = document.getElementById("showMore");
+const text = document.getElementById("footerText");
+
+moreBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  text.classList.toggle("expanded");
+  moreBtn.textContent = text.classList.contains("expanded") ? "کمتر" : "بیشتر";
+});

@@ -1,0 +1,144 @@
+.backup {
+  display: flex;
+  label[for="backup"] {
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 40px;
+    background-color: red;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    direction: ltr;
+    line-height: 52px;
+    gap: 10px;
+
+    i{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-top:12px ;
+    }
+  }
+  #backup,
+  #close {
+    display: none;
+  }
+  .cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(27, 26, 26, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 100;
+  }
+  .backup {
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 1;
+    right: 20px;
+    top: 140px;
+    border: 1px solid #ed0c0c;
+    border-radius: 10px;
+    flex-direction: column;
+    z-index: 100;
+    h3 {
+      font-size: 16px;
+   
+      width: 100%;
+      border-radius: 9px 9px 0 0;
+      height: 60px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: red;
+      color: whitesmoke;
+      line-height: 60px;
+    }
+    .write {
+      width: 100%;
+
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      overflow: scroll;
+      h6 {
+        font-size: 14px;
+        color: #2b2b2b;
+        z-index: 101;
+        margin: 20px;
+      }
+      p {
+        width: 90%;
+        height: 50px;
+        border: 1px solid #2b2b2b;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 50px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        overflow: hidden;
+        &:hover {
+          overflow: visible;
+          height: 700px;
+        }
+      }
+
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      width: 140px;
+      height: 50px;
+      margin-top: 10px;
+      font-size: 15px;
+      font-family: Yekan;
+      color: #0d0d12;
+      background-color: red;
+      border-radius: 18px;
+      margin: 10px auto;
+      line-height: 50px;
+      text-align: center;
+     
+    }
+  }
+  #backup:checked ~ .cover {
+    display: block;
+  }
+
+  label[for="close"] {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 520px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    line-height: 52px;
+  }
+  #close:checked ~ .cover {
+    display: none !important;
+  }
+}
